@@ -1,0 +1,54 @@
+# Application de transfert d'argent et de wallet electronique
+## Main entities:
+- Expediteur:
+	- Nom et prénoms
+	- Addresse
+	- Ville
+	- Pays
+	- Téléphone
+	- Type de pièce d'identité
+	- Numéro de pièce d'identité
+	- Question test (Optionnel)
+	- Reponse (Optionnel)
+
+- Beneficiare:
+	- Nom et prénoms
+	- Ville (Optionnel)
+	- Pays
+	- Message (Optionnel)
+
+- Envoi:
+	- Code
+	- Date et heure
+	- Agent
+		- Nom
+		- Addresse
+	- Montant envoyé
+	- Frais de transfert
+	- Frais de message (Optionnel)
+	- Frais de livraison (Optionnel)
+	- Taxe TTA (Taxe sur les Transferts d'Argent, applicable au Senegale d'un taux de 0.5% avec un plafond de 2000 pour chaque envoi/retrait)
+	- Taxe TAF (Taxe sur les Activités Financières, applicable au Senegale d'un taux de 17% chaque envoi/retrait)
+	- Taxe THZUEMOA (Taxe Hors Zone UEMOA, taxes appliqués aux flux financiers circulant à l'intérieur ou en provenance/destination des pays membres de l'UEMOA)
+	- Total taxe
+	- Rabais (Optionnel)
+	- Total (en Monnaie d'envoi)
+	- Taux de change
+	- Montant a payer (en Monnaie de reception)
+## Regulatory compliance:
+- RGPD
+- AML/KYC
+## Main fonctionnalities
+### Web
+- For admin:
+    - Agency management
+    - global configuration such as sender/receiver countries, regions and city, transfert fees, taxe's rates, etc...
+    - Main dashbaord
+- For customer support agent:
+    - Check transactions when something went wrong to repond to customer support
+- For Agency:
+    - send/receive money
+    - Dahsbord of transactions: dayly, weekly, monthly, annualy dashboard
+### Mobile
+- App Mobile for Agency: Cashin/Cashout from customer using QR Code
+- App Mobile for Customer/End user: Show his wallet's value, peer to peer send money, cashin/cashout from Agency using QR Code
